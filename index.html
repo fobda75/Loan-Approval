@@ -15,26 +15,36 @@
     <Div>
         <form>
             <label for="loanAmount">How much money do you wish to borrow?</label>
-            <input type="number" id="loanAmount" max="100000" min="1000">
+            <input type="number" id="loanAmount" max="100000" min="1000" required>
+            <p id="loanAmountCorrection" class="correction"></p>
             <br>
 
             <label for="loanTerm">Over how many months do you plan to repay the loan?</label>
-            <input type="number" id="loanTerm" min="12" max="120">
+            <input type="number" id="loanTerm" min="12" max="120" value="36" required>
+            <p id="loanTermCorrection" class="correction"></p>
             <br>
 
             <label for="salaryAmount">What is your current annual salary?</label>
-            <input type="number" id="salaryAmount" min="0" max="5000000">
+            <input type="number" id="salaryAmount" min="0" max="5000000" required>
+            <p id="salaryAmountCorrection" class="correction"></p>
             <br>
 
             <label for="creditScore">What is your current FICO credit score?</label>
-            <input type="number" id="creditScore" min="300" max="850">
+            <input type="number" id="creditScore" min="300" max="850" required>
+            <p id="creditScoreCorrection" class="correction"></p>
             <br>
 
             <label for="jobMonths">For how many months have you been at your current employment?</label>
-            <input type="number" id="jobMonths">
+            <input type="number" id="jobMonths" min="0" max="480" required>
+            <p id="jobMonthsCorrection" class="correction"></p>
+            <br>
+
+            <button id="calculateButton">Determine Eligibility</button>
             <br>
         </form>
-
+        <br>
+        <p id="calculationResults"></p>
+        <br>
     </Div>
 
 
