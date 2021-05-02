@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Loan Bank</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="loan.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>Loan Eligibility Calculator</h1>
+
+    <Div>
+        <form>
+            <label for="loanAmount">How much money do you wish to borrow?</label>
+            <input type="number" id="loanAmount" max="100000" min="1000">
+            <br>
+
+            <label for="loanTerm">Over how many months do you plan to repay the loan?</label>
+            <input type="number" id="loanTerm" min="12" max="120">
+            <br>
+
+            <label for="salaryAmount">What is your current annual salary?</label>
+            <input type="number" id="salaryAmount" min="0" max="5000000">
+            <br>
+
+            <label for="creditScore">What is your current FICO credit score?</label>
+            <input type="number" id="creditScore" min="300" max="850">
+            <br>
+
+            <label for="jobMonths">For how many months have you been at your current employment?</label>
+            <input type="number" id="jobMonths">
+            <br>
+        </form>
+
+    </Div>
+
+
+
+
+
+<footer>
+    <img src="diamond-motto2.jpg" alt="Diamond Bank Motto" height="374" width="668"/>
+    <p id="bankMember">Diamond Loan Bank - Member WCTC</p>
+</footer>
+<!-- jQuery first -- BEWARE OF THE SLIM VERSION FROM BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="loan.js"></script>
+
+
+</body>
+</html>
