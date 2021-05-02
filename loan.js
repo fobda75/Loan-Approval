@@ -5,11 +5,11 @@ let creditScore=0;
 let jobTerm=0;
 let loanApproved = false;
 $(document).ready(function () {
-    $("#loanAmount").on("change", checkLoanAmount);
-    $("#loanTerm").on("change", checkLoanTerm);
-    $("#salaryAmount").on("change", checkSalaryAmount);
-    $("#creditScore").on("change", checkCreditScore);
-    $("#jobMonths").on("change", checkJobMonths);
+    $("#loanAmount").on("submit", checkLoanAmount);
+    $("#loanTerm").on("submit", checkLoanTerm);
+    $("#salaryAmount").on("submit", checkSalaryAmount);
+    $("#creditScore").on("submit", checkCreditScore);
+    $("#jobMonths").on("submit", checkJobMonths);
     $("#calculateButton").click(calculateEligibility);
 })
 
